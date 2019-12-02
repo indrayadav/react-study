@@ -1,20 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import SearchParams from "/components/SearchParams.js";
+import SearchParams from "./components/SearchParams";
 
 import "./App.css";
 
-const name = "sanjeev";
+const App = () => {
+  return (
+    <div className="container">
+      <h1 className="page-title">
+        Main Page
+      </h1>
 
-const App = () => (
-  <div>
-    {" "}
-    My First App by{" "}
-    {(function() {
-      return `I am ${name}`;
-    })()}{" "}
-  </div>
-);
+      <SearchParams />
+    </div>
+  );
+};
 
 ReactDOM.render(
   <App />,

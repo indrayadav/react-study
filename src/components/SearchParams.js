@@ -1,21 +1,26 @@
-import React from "React";
+import React from "react";
+import SearchResults from "./SearchResults";
+// import Label from "./Label";
 
 const SearchParams = () => {
-  const location = "Kathmandu";
-
+  const search_query = "Search";
   return (
     <div className="search-params">
       <form>
         <label htmlFor="location">
-          Location
-          <input
-            id="location"
-            value={location}
-            placeholder="Location"
-          />
+          Search Post
         </label>
-        <button>Submit</button>
+        <input
+          type="text"
+          id="query"
+          value=""
+        />
+
+        <button>Search</button>
       </form>
+      <SearchResults />
     </div>
   );
 };
+
+export default SearchParams;
