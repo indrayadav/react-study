@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import SearchParams from "./components/SearchParams";
+import SearchResults from "./components/SearchResults";
 
 import "./App.css";
 
@@ -11,7 +11,7 @@ const App = () => {
         Main Page
       </h1>
 
-      <SearchParams />
+      <SearchResults />
     </div>
   );
 };
