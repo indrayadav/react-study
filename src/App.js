@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import SearchResults from "./components/SearchResults";
 
+import SayHello from "./components/SayHello";
+
 import "./App.css";
 
 const App = () => {
@@ -10,7 +12,7 @@ const App = () => {
       <h1 className="page-title">
         Main Page
       </h1>
-
+      <SayHello />
       <SearchResults />
     </div>
   );
