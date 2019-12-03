@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import SearchResults from "./components/SearchResults";
+import SearchResults from "./components/Search/SearchResults";
 
-import SayHello from "./components/SayHello";
+import SayHello from "./components/Search/SayHello";
+import MouseHoverEventHandler from "./components/Search/MouseHoverEventHandler";
 
 import "./App.css";
 
@@ -13,6 +14,7 @@ const App = () => {
         Main Page
       </h1>
       <SayHello />
+      <MouseHoverEventHandler />
       <SearchResults />
     </div>
   );

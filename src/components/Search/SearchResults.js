@@ -3,6 +3,8 @@ import React, {
   useEffect
 } from "react";
 
+import "./Search.css";
+
 import axios from "axios";
 
 const SearchResults = () => {
@@ -38,6 +40,7 @@ const SearchResults = () => {
         />
 
         <button
+          id="Search-btn_input"
           onClick={() =>
             fetchUsers(posts)
           }
